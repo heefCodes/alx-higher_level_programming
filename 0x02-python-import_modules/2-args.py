@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-from sys import argv
-
 if __name__ == "__main__":
+    from sys import argv
     user_input = argv[1:]
     size = len(user_input)
     # if size == 1:
