@@ -16,5 +16,5 @@ if __name__ == "__main__":
           format(size,
                  "arguments" if (size) != 1 else "argument",
                  "." if (size) == 0 else ":"))
-    for idx, arg in enumerate(user_input):
-        print("{:d}: {:s}".format(idx + 1, arg))
+    for i, arg in enumerate(user_input):
+        print("{:d}: {:s}".format(i + 1, arg))
