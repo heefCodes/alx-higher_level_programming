@@ -2,8 +2,9 @@
 """
 Module 1-square
 Defines class Square
-
 """
+
+
 class Square:
     """
     class Square definition
@@ -18,5 +19,4 @@ class Square:
         Attribute:
             size: size of a square
         """
-        self.__size  = size
-        
+        self.__size = size
