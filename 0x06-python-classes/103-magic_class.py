@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Define MagicClass"""
 import math
-import dis
+#import dis
 
 
 class MagicClass:
@@ -22,4 +22,4 @@ class MagicClass:
         return 2 * math.pi * self.__radius
 
 
-dis.dis(MagicClass)
+#dis.dis(MagicClass)
