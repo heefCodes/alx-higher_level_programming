@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Define MagicClass"""
 import math
-#import dis
 
 
 class MagicClass:
@@ -20,3 +19,10 @@ class MagicClass:
     def circumference(self):
         """Calcualte circumference"""
         return 2 * math.pi * self.__radius
+
+
+"""
+To display the byte code uncomment the line
+import dis
+dis.dis(MagicClass)
+"""
