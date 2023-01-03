@@ -90,6 +90,6 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-        rectangle = "\n".join(["#" * self.__width for rows in range(self.__height)])
+        rectangle = "\n".join(["#" * self.__width for rows in range(self.
+                                                                    __height)])
         return rectangle
-        
