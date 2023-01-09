@@ -1,0 +1,65 @@
+
+>>> MyList = __import__('1-my_list').MyList
+
+Test for unsigned int
+>>> my_list = MyList()
+>>> my_list.append(-1)
+>>> my_list.append(-2)
+>>> my_list.append(-0)
+>>> print(my_list)
+[-1, -2, 0]
+>>> my_list.print_sorted()
+[-2, -1, 0]
+
+Test for int
+Test for unsigned int
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.append(0)
+>>> print(my_list)
+[1, 2, 0]
+>>> my_list.print_sorted()
+[0, 1, 2]
+
+Test for empty list
+>>> emppty_list = MyList()
+>>> print(emppty_list)
+[]
+>>> emppty_list.print_sorted()
+[]
+
+Test for float
+>>> check_float = MyList()
+>>> check_float.append(1.1)
+>>> check_float.append(1.2)
+>>> check_float.append(1.3)
+>>> check_float.append(1.2)
+>>> print(check_float)
+[1.1, 1.2, 1.3, 1.2]
+>>> check_float.print_sorted()
+[1.1, 1.2, 1.2, 1.3]
+
+Test for a single list
+>>> single_list = MyList()
+>>> single_list.append(300)
+>>> print(single_list)
+[300]
+>>> single_list.print_sorted()
+[300]
+
+Test type, isinstance, issubclass:
+>>> type(MyList())
+<class '1-my_list.MyList'>
+
+>>> isinstance(MyList, object)
+True
+
+>>> isinstance(MyList, list)
+False
+
+>>> issubclass(MyList, list)
+True
+
+>>> 'print_sorted' in dir(MyList)
+True
