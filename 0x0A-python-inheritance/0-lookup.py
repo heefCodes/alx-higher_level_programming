@@ -8,4 +8,4 @@ methods of an object.
 
 
 def lookup(obj):
-    return dir(object)
+    return dir(obj)
