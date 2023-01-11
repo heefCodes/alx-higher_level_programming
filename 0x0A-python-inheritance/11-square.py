@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 10-square
+Module 11-square
 Contains parent class Rectangle
 with public instance method area and integer_validator
 Contains subclass Square
@@ -24,3 +24,12 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
+
+    # def area(self):
+    #     """extends parent's empty method and returns area"""
+    #     return self.__width * self.__height
+
+    def __str__(self):
+        """prints [Square] <width>/<height>"""
+        return "[{:s}] {:d}/{:d}".format(self.__class__.__name__,
+                                         self.__size, self.__size)
