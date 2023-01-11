@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 8-rectangle
+Module 9-rectangle
 Contains parent class BaseGeometry
 with public instance method area and integer_validator
 Contains subclass Rectangle
